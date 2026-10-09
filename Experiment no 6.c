@@ -1,14 +1,15 @@
 #include <stdio.h>
 int main() {
- // This is a single-line comment
- // It explains that the program prints a welcome message
- /* This is a multi-line comment.
- It can span across several lines.
- Here, we declare a variable and print its value. */
- int num = 10; // single-line comment: declaring and initializing a variable
- printf("The value of num is: %d\n", num);
- /* End of program.
- Comments do not affect program execution;
- they are purely for documentation purposes. */
+ int a = 5, b = 10, c = 2, result1, result2;
+ // Without parentheses: * has higher precedence than +
+ result1 = a + b * c; // evaluated as a + (b * c)
+ // With parentheses: forces addition to happen first
+ result2 = (a + b) * c;
+ printf("a + b * c = %d\n", result1);
+ printf("(a + b) * c = %d\n", result2);
+ // Relational and logical operator precedence
+ int x = 5, y = 10, z = 15;
+ int logicResult = x < y && y < z; // relational evaluated before logical AND
+ printf("x < y && y < z = %d\n", logicResult);
  return 0;
 }
