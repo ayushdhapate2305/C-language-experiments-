@@ -1,3 +1,4 @@
+#include <stdio.h>
 int main() {
  int arr[100], n, i, sum = 0;
  printf("Enter the number of elements: ");
